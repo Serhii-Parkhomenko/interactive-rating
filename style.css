@@ -10,10 +10,13 @@ html {
 }
 
 body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: hsl(216, 12%, 8%);
   position: relative;
 }
 
@@ -136,4 +139,17 @@ body {
   place-items: center;
   min-height: 100vh;
   background-color: hsl(216, 12%, 8%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  .rating__icon,
+  .rating__score__point {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 }
