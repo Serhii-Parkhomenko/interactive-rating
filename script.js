@@ -22,5 +22,7 @@ submitButton.addEventListener('click', () => {
       document.querySelector('.raiting__point').innerHTML = point.innerText;
     }
   });
-  document.querySelector('.popup').style.display = 'grid';
+  setTimeout(() => {
+    document.querySelector('.popup').style.display = 'grid';
+  }, 150);
 });
